@@ -18,7 +18,7 @@ model = pickle.load(open('used_car_price_model.pkl', 'rb'))
 #index.html file is created seperately
 def Home():
     return render_template('index.html')
-
+standard_to = StandardScaler()
 #HTTP POST request method
 #define the route for post method 
 @app.route("/predict", methods=['POST'])
