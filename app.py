@@ -13,7 +13,7 @@ model = pickle.load(open('used_car_price_model.pkl', 'rb'))
 
 #define the route(basically url) to which we need to send http request
 #HTTP GET request method
-@app.route('/Home',methods=['GET'])
+@app.route('/',methods=['GET'])
 #create a function Home that will return index.html(which contains html form)
 #index.html file is created seperately
 def Home():
